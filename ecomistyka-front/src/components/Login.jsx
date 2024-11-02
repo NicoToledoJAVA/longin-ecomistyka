@@ -1,7 +1,7 @@
-//login.jsx
+//Login.jsx
 
 import React, { useState } from 'react';
-import './Modal.css';
+import '../css/Modal.css';
 
 const LoginWindow = ({ isOpen, onClose }) => {
   const [username, setUsername] = useState('');

@@ -1,5 +1,33 @@
 /*Modal.css*/
 
+.raindrops {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.raindrop {
+  position: absolute;
+  color: #c1c1c1;
+  font-size: 1.5rem;
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(-100vh);
+  }
+  100% {
+      transform: translateY(100vh);
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
